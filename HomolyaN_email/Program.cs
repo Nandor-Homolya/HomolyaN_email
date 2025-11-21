@@ -48,7 +48,15 @@ namespace HomolyaN_email
                         int index= Convert.ToInt32(Console.ReadLine());
                         e_mailok.RemoveAt(index);
                         break;
-                    case "4": Console.WriteLine("érvényes listázása");break;
+                    case "4": Console.WriteLine("érvényes emailok listája");
+                        foreach (String email in e_mailok)
+                        {
+                            if (email.Contains(".") && email.Contains("@"))
+                            {
+                                Console.WriteLine(email);
+                            }
+                        }
+                        break;
                     default : Console.WriteLine("rossz parancs");break;
                 }
                 Console.ReadLine();

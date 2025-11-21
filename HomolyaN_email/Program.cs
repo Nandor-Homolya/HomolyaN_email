@@ -38,7 +38,11 @@ namespace HomolyaN_email
                             Console.WriteLine($"{sorszam++}  {e_mail}");
                         }
                             break;
-                    case "2": Console.WriteLine("új emailek");break;
+                    case "2": Console.WriteLine("új emailek");
+                        Console.WriteLine("Adja meg a z új email címet:");
+                        String uj = Console.ReadLine();
+                        e_mailok.Add(uj);
+                        break;
                     case "3": Console.WriteLine("email törlése"); break;
                     case "4": Console.WriteLine("érvényes listázása");break;
                     default : Console.WriteLine("rossz parancs");break;

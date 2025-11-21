@@ -43,7 +43,11 @@ namespace HomolyaN_email
                         String uj = Console.ReadLine();
                         e_mailok.Add(uj);
                         break;
-                    case "3": Console.WriteLine("email törlése"); break;
+                    case "3": Console.WriteLine("email törlése");
+                        Console.WriteLine("Adja meg a törlendő email azonosítóját: ");
+                        int index= Convert.ToInt32(Console.ReadLine());
+                        e_mailok.RemoveAt(index);
+                        break;
                     case "4": Console.WriteLine("érvényes listázása");break;
                     default : Console.WriteLine("rossz parancs");break;
                 }

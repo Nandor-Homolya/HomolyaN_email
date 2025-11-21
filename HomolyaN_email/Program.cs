@@ -10,6 +10,12 @@ namespace HomolyaN_email
     {
         static void Main(string[] args)
         {
+            List<string> e_mailok = new List<String>();
+            e_mailok.Add("alma1@kört.hu");
+            e_mailok.Add("alma2@dfdfdf.hu");
+            e_mailok.Add("alma3@sdsddsd.hu");
+            e_mailok.Add("solteszz@kkszki.hu");
+            e_mailok.Add("alma1@kört.com");
             while (true) { 
                 Console.Clear();
                 Console.WriteLine("0. Kilépés");

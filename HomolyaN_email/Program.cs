@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -28,7 +29,14 @@ namespace HomolyaN_email
                 switch (valasztas)
                 {
                     case "0": return;
-                    case "1": Console.WriteLine("emailek listázása"); break;
+                    case "1":
+                        Console.Clear();
+                        Console.WriteLine("emailek listázása");
+                        int sorszam = 0;
+                            foreach (String e_mail in e_mailok)
+                        {
+                            Console.WriteLine($"{sorszam++}  {e_mail}");
+                        }
                     case "2": Console.WriteLine("új emailek");break;
                     case "3": Console.WriteLine("email törlése"); break;
                     case "4": Console.WriteLine("érvényes listázása");break;
